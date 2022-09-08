@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("../assets/fonts/SourceSansPro.woff2") format("woff2");
+  }
+  
+  body {
+    /* BEGIN (write your solution here) */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* END */
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+  
+    font-family: "Source Sans Pro", sans-serif;
+  
+    background-color: #8ec5fc;
+    background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  }
+  
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .weather {
+    /* BEGIN (write your solution here) */
+    display: flex;
+    justify-content: space-between;
+    /* END */
+    width: 355px;
+    height: 125px;
+    padding: 25px;
+  
+    background: #fff;
+    border-radius: 10px;
+  }
+  
+  .weather-info {
+    /* BEGIN (write your solution here) */
+    display: flex;
+    flex-direction: column;
+   
+    /* END */
+  }
+  
+  .weather-info * {
+    margin: 0;
+  }
+  
+  .weather-value {
+    /* BEGIN (write your solution here) */
+    display: flex;
+    /* END */
+  
+    font-size: 4rem;
+  }
+  
+  .weather-value img {
+    height: 1.3em;
+    margin-right: 0.3em;
+  }
+  
+  .weather-img {
+    /* BEGIN (write your solution here) */
+    display: flex;
+    /* END */
+  }
+ 
+  /* BEGIN (write your solution here) */
+@media screen and (max-width: 400px) {
+  .weather {
+    display: flex;
+    flex-flow: column-reverse;
+    width: 100vh;
+    height:70vh;
+    gap: 1rem;
+    align-items: center;
+  }
+  .weather-info {
+    display: flex;
+    align-items: center;
+  }
+}
+  /* END */
+  
